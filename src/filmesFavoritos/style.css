@@ -7,7 +7,7 @@
 }
 
 header{
-    background-color: #f3a15a;
+    background-color: #8d5af3;
 }
 
 .header-div{
@@ -62,6 +62,7 @@ header{
 
 .banner-img{
     box-shadow: 0px 0px 40px black;
+    width: 100vw;
 }
 
 .banner-text-h1{
@@ -124,7 +125,7 @@ header{
 }
 
 .banner-link:hover{
-    color: #f3a15a;
+    color: #8d5af3;
 }
 
 main{
@@ -269,7 +270,48 @@ main{
 #filme1{
     display: none;
 }
+#filme2{
+    display: none;
+}
+#filme3{
+    display: none;
+}
+#filme4{
+    display: none;
+}
+#filme5{
+    display: none;
+}
 
 footer{
-    background-color: #f3a15a;
+    background-color: #424242;
+}
+
+.footer-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    color: rgba(0, 0, 0, 0.617);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;  
+    font-weight: 500;
+
+    margin-left: 30px;
+    margin-right: 30px;
+
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.footer-div-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-div-logo-img{
+    width: 18px;
 }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/src/livrosFavoritos/style.css" media="screen"/>
+    <script type="text/javascript" src="/js/script.js"></script>
+    <title>A Biblioteca</title>
+</head>
+<body>
+
+    <header>
+        
+    </header>
+
+    <main>
+        <div id="div-main">
+            <h1 class="titulo">A Biblioteca</h1>
+            <br>
+            <p class="paragrafo">Um segredo escondido, uma pagina rasgada!</p>
+            <p class="paragrafo">Um erro cometido, que ainda pode ser resolvido!</p>
+            <p class="paragrafo">Encontre a passagem secreta!</p>
+            <br>
+            <p class="paragrafo">Dica: Fotos possuem segredos</p>
+            <br>
+            <p class="paragrafo">Boa sorte!</p>
+            <p class="paragrafo">-G</p>
+            <br>
+            <br>
+            <a onclick="fechar()" class="iniciar">Fechar</a>
+        </div>
+
+        <div id="div-main-menu">
+            <a onclick="abrir()">A Biblioteca</a>
+            <a href="/">Sair</a>
+        </div>
+
+        <div class="botao" onclick="paginaAbrir()"></div>
+
+        <div id="pagina-livro">
+            <img class="pagina-img" src="/res/paginaRasgada.png">
+            <a onclick="paginaFechar()" class="pagina-voltar">Voltar</a>
+        </div>
+
+        <div class="botao2" onclick="livroAbrir()"></div>
+
+        <div id="livro-escondido">
+            <img class="livro-img" src="/res/livro.jpeg">
+            <a onclick="livroFechar()" class="pagina-voltar">Voltar</a>
+        </div>
+
+        <div class="botao3" onclick="painelAbrir()"></div>
+
+        <div id="painel-passagem">
+            <p class="painel-texto">Digite a senha:</p>
+            <input class="painel-input" type="password" id="psw">
+            <div class="painel-btn-div">
+                <button onclick="verificar()" class="painel-btn">Abrir</button>
+                <button onclick="painelFechar()" class="painel-btn">Cancelar</button>
+            </div>
+        </div>
+
+        <audio id="audio"><source src="/res/portaAbrindo.mp3" type="audio/mpeg"></audio>
+
+        <img class="img-fundo" src="/res/biblioteca.jpg">
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
