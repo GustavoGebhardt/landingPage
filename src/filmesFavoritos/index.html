@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/src/filmesFavoritos/style.css" media="screen"/>
+    <script type="text/javascript" src="/js/script.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -20,13 +21,13 @@
             <img class="banner-img" src="/res/banner.png">
             <h1 class="banner-text-h1">STAR WARS</h1>
             <p class="banner-text-p">Paul Atreides se une a Chani e aos <br>Fremen em uma guerra de vingança contra os <br>conspiradores que destruíram sua família.</p>
-            <a class="banner-link">Assistir Treiler</a>
+            <a class="banner-link" target="_blank" href="https://www.youtube.com/watch?v=63EAJJakvEU&list=PLiHiyN05vgSN7YAlinZEXN0-P5PSK1dYx">Assistir Treiler</a>
         </div>
         <h1 class="titulo">FILMES FAVORITOS</h1>
         <div class="filme-div-master">
             <div class="filme-div">
                 <h1 class="filme-text-div">1</h1>
-                <img class="filme-capa" src="/res/questaoDeTempo.png">
+                <img onclick="abrirFilme()" class="filme-capa" src="/res/questaoDeTempo.png">
             </div>
             <div class="filme-div-2">
                 <h1 class="filme-text-div">2</h1>
@@ -44,7 +45,20 @@
                 <h1 class="filme-text-div">5</h1>
                 <img class="filme-capa-2" src="/res/scoobyDooMisterioSA.jpeg">
             </div>
-        </div>        
+        </div>
+        <div id="filme1">
+            <div class="painel-filme">
+                <div class="painel-filme-texto">
+                    <h1 class="titulo-filme">Questão de Tempo</h1>
+                    <p class="previa-filme">Depois de descobrir que ele pode viajar no tempo,<br> o jovem Tim Lake usa sua habilidade para ganhar<br>o coração da mulher dos seus sonhos e salvar<br> seu amigo de um desastre profissional.</p>
+                    <div class="info-filme">
+                        <img class="res-filme" src="/res/12.png">
+                        <p class="previa-filme">2013, Romance/Comedia, 2h 4m</p>
+                    </div>
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-0gX9g4Lxm8?si=I1lbNvGbMAYwsbsN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
     </main>
 
     <footer>
