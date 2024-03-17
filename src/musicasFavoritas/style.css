@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: rgb(9,119,121);
+    background: linear-gradient(90deg, rgba(9,119,121,1) 10%, rgba(9,79,121,1) 65%);
+}
+
+.titulo{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    color: white;
+}
+
+.main-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.main-div-musicas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.div-info-musica{
+    display: flex;
+    flex-direction: column;
+}
+
+.musica{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    gap: 10px;
+
+    background-color: rgba(0, 0, 0, 0.34);
+    padding: 8px;
+    padding-right: 15px;
+    border-radius: 10px;
+
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.musica:after{
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.musica:hover{
+    transform:scale(1.05,1.05);
+}
+
+.capa{
+    width: 40px;
+}
+
+.nome-musica{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    color: white;
+}
+
+.cantor-musica{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.voltar{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+
+    margin-top: 200px;
+
+    text-decoration: none;
+}
+
+#play1{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    display: block;
+}
+
+#pause1{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    display: none;
+}
+
+#play2{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    display: block;
+}
+
+#pause2{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    display: none;
+}
+
+#play3{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    display: block;
+}
+
+#pause3{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    display: none;
+}
+
+#play4{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    display: block;
+}
+
+#pause4{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    display: none;
+}
+
+#play5{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    display: block;
+}
+
+#pause5{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    display: none;
+}

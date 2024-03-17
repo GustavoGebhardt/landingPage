@@ -166,6 +166,8 @@ function playAudio(){
 
 function verificar(){
     var div = document.getElementById("painel-passagem");
+    var img = document.getElementById("img-fundo");
+    var img2 = document.getElementById("img-fundo-2");
     let senha = document.getElementById("psw").value;
 
     console.log(senha)
@@ -173,8 +175,120 @@ function verificar(){
     if(senha == "teste"){
         playAudio()
         div.style.display = "none";
+        img.style.display = "none";
+        img2.style.display = "block";
         setTimeout(function() {location.href = "/src/livrosFavoritos/passagemSecreta"}, 9000);
     } else{
         alert("Senha Invalida!")
     }
+}
+
+function playMusica1(){
+    //let audio = document.getElementById("x")
+    //audio.play();
+
+    let play = document.getElementById("play1")
+    let pause = document.getElementById("pause1")
+
+    play.style.display = "none";
+    pause.style.display = "block";
+}
+
+function stopMusica1(){
+    //let audio = document.getElementById("x")
+    //audio.play()
+
+    let play = document.getElementById("play1")
+    let pause = document.getElementById("pause1")
+
+    play.style.display = "block";
+    pause.style.display = "none";
+}
+
+function playMusica2(){
+    //let audio = document.getElementById("x")
+    //audio.play();
+
+    let play = document.getElementById("play2")
+    let pause = document.getElementById("pause2")
+
+    play.style.display = "none";
+    pause.style.display = "block";
+}
+
+function stopMusica2(){
+    //let audio = document.getElementById("x")
+    //audio.play()
+
+    let play = document.getElementById("play2")
+    let pause = document.getElementById("pause2")
+
+    play.style.display = "block";
+    pause.style.display = "none";
+}
+
+function playMusica3(){
+    //let audio = document.getElementById("x")
+    //audio.play();
+
+    let play = document.getElementById("play3")
+    let pause = document.getElementById("pause3")
+
+    play.style.display = "none";
+    pause.style.display = "block";
+}
+
+function stopMusica3(){
+    //let audio = document.getElementById("x")
+    //audio.play()
+
+    let play = document.getElementById("play3")
+    let pause = document.getElementById("pause3")
+
+    play.style.display = "block";
+    pause.style.display = "none";
+}
+
+function playMusica4(){
+    //let audio = document.getElementById("x")
+    //audio.play();
+
+    let play = document.getElementById("play4")
+    let pause = document.getElementById("pause4")
+
+    play.style.display = "none";
+    pause.style.display = "block";
+}
+
+function stopMusica4(){
+    //let audio = document.getElementById("x")
+    //audio.play()
+
+    let play = document.getElementById("play4")
+    let pause = document.getElementById("pause4")
+
+    play.style.display = "block";
+    pause.style.display = "none";
+}
+
+function playMusica5(){
+    //let audio = document.getElementById("x")
+    //audio.play();
+
+    let play = document.getElementById("play5")
+    let pause = document.getElementById("pause5")
+
+    play.style.display = "none";
+    pause.style.display = "block";
+}
+
+function stopMusica5(){
+    //let audio = document.getElementById("x")
+    //audio.play()
+
+    let play = document.getElementById("play5")
+    let pause = document.getElementById("pause5")
+
+    play.style.display = "block";
+    pause.style.display = "none";
 }

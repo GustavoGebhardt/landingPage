@@ -15,8 +15,19 @@ main{
     justify-content: center;
 }
 
-.img-fundo{
+#img-fundo{
     position: relative;
+    display: block;
+
+    width: 100vw;
+    height: 100vh;
+
+    opacity: 60%;
+}
+
+#img-fundo-2{
+    position: relative;
+    display: none;
 
     width: 100vw;
     height: 100vh;
