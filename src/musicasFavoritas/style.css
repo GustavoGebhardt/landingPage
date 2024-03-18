@@ -45,6 +45,8 @@ body{
     align-items: center;
     gap: 10px;
 
+    width: 250px;
+
     background-color: rgba(0, 0, 0, 0.34);
     padding: 8px;
     padding-right: 15px;
@@ -94,58 +96,68 @@ body{
     background-color: rgba(0, 0, 0, 0);
     border: none;
     display: block;
+    margin-left: 50px;
 }
 
 #pause1{
     background-color: rgba(0, 0, 0, 0);
     border: none;
     display: none;
+    margin-left: 50px;
 }
 
 #play2{
     background-color: rgba(0, 0, 0, 0);
     border: none;
     display: block;
+    margin-left: 47px;
 }
 
 #pause2{
     background-color: rgba(0, 0, 0, 0);
     border: none;
     display: none;
+    margin-left: 47px;
 }
 
 #play3{
     background-color: rgba(0, 0, 0, 0);
     border: none;
     display: block;
+    margin-left: 49px;
 }
 
 #pause3{
     background-color: rgba(0, 0, 0, 0);
     border: none;
     display: none;
+    margin-left: 49px;
 }
 
 #play4{
     background-color: rgba(0, 0, 0, 0);
     border: none;
     display: block;
+    margin-left: 85px;
 }
 
 #pause4{
     background-color: rgba(0, 0, 0, 0);
     border: none;
     display: none;
+    margin-left: 85px;
 }
 
 #play5{
     background-color: rgba(0, 0, 0, 0);
     border: none;
     display: block;
+    margin-left: 9px;
 }
 
 #pause5{
     background-color: rgba(0, 0, 0, 0);
     border: none;
     display: none;
+    margin-left: 9px;
 }

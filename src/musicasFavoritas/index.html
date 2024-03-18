@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="/src/musicasFavoritas/style.css" media="screen"/>
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.5.0/css/all.css">
     <script type="text/javascript" src="/js/script.js"></script>
-    <title>Document</title>
+    <title>Musicas</title>
 </head>
 <body>
 
@@ -14,50 +14,50 @@
         <h1 class="titulo">Musicas</h1>
         <div class="main-div-musicas">
             <div class="musica">
-                <img class="capa" src="/res/capaPromiscuous.jpeg">
+                <img class="capa" src="/res/capaInbetweenDays.jpeg">
                 <div class="div-info-musica">
-                    <p class="nome-musica">Promiscuous</p>
-                    <p class="cantor-musica">Nelly Furtado, Timbaland</p>
+                    <p class="nome-musica">In Between Days</p>
+                    <p class="cantor-musica">The Cure</p>
                 </div>
                 <button id="play1" onclick="playMusica1()"><i class="fa-solid fa-play" style="color: #ffffff;"></i></i></button>
                 <button id="pause1" onclick="stopMusica1()"><i class="fa-solid fa-pause" style="color: #ffffff;"></i></button>
             </div>
 
             <div class="musica">
-                <img class="capa" src="/res/capaPromiscuous.jpeg">
+                <img class="capa" src="/res/capaJustLikeHeaven.jpeg">
                 <div class="div-info-musica">
-                    <p class="nome-musica">Promiscuous</p>
-                    <p class="cantor-musica">Nelly Furtado, Timbaland</p>
+                    <p class="nome-musica">Just Like Heaven</p>
+                    <p class="cantor-musica">The Cure</p>
                 </div>
                 <button id="play2" onclick="playMusica2()"><i class="fa-solid fa-play" style="color: #ffffff;"></i></i></button>
                 <button id="pause2" onclick="stopMusica2()"><i class="fa-solid fa-pause" style="color: #ffffff;"></i></button>
             </div>
 
             <div class="musica">
-                <img class="capa" src="/res/capaPromiscuous.jpeg">
+                <img class="capa" src="/res/capaBetteDavisEyes.jpeg">
                 <div class="div-info-musica">
-                    <p class="nome-musica">Promiscuous</p>
-                    <p class="cantor-musica">Nelly Furtado, Timbaland</p>
+                    <p class="nome-musica">Bette Davis Eyes</p>
+                    <p class="cantor-musica">Kim Carnes</p>
                 </div>
                 <button id="play3" onclick="playMusica3()"><i class="fa-solid fa-play" style="color: #ffffff;"></i></i></button>
                 <button id="pause3" onclick="stopMusica3()"><i class="fa-solid fa-pause" style="color: #ffffff;"></i></button>
             </div>
 
             <div class="musica">
-                <img class="capa" src="/res/capaPromiscuous.jpeg">
+                <img class="capa" src="/res/capaYourLove.jpeg">
                 <div class="div-info-musica">
-                    <p class="nome-musica">Promiscuous</p>
-                    <p class="cantor-musica">Nelly Furtado, Timbaland</p>
+                    <p class="nome-musica">Your Love</p>
+                    <p class="cantor-musica">The Outfield</p>
                 </div>
                 <button id="play4" onclick="playMusica4()"><i class="fa-solid fa-play" style="color: #ffffff;"></i></i></button>
                 <button id="pause4" onclick="stopMusica4()"><i class="fa-solid fa-pause" style="color: #ffffff;"></i></button>
             </div>
 
             <div class="musica">
-                <img class="capa" src="/res/capaPromiscuous.jpeg">
+                <img class="capa" src="/res/capaMelhorDoQueOntem.jpeg">
                 <div class="div-info-musica">
-                    <p class="nome-musica">Promiscuous</p>
-                    <p class="cantor-musica">Nelly Furtado, Timbaland</p>
+                    <p class="nome-musica">Melhor do Que Ontem</p>
+                    <p class="cantor-musica">Capital Inicial</p>
                 </div>
                 <button id="play5" onclick="playMusica5()"><i class="fa-solid fa-play" style="color: #ffffff;"></i></i></button>
                 <button id="pause5" onclick="stopMusica5()"><i class="fa-solid fa-pause" style="color: #ffffff;"></i></button>
@@ -65,6 +65,12 @@
         </div>
         <a href="/" class="voltar">Voltar</a>
     </main>
+
+    <audio id="musica1"><source src="/res/inBetweenDays.mp3" type="audio/mpeg"></audio>
+    <audio id="musica2"><source src="/res/justLikeHeaven.mp3" type="audio/mpeg"></audio>
+    <audio id="musica3"><source src="/res/betteDavisEyes.mp3" type="audio/mpeg"></audio>
+    <audio id="musica4"><source src="/res/yourLove.mp3" type="audio/mpeg"></audio>
+    <audio id="musica5"><source src="/res/melhorDoQueOntem.mp3" type="audio/mpeg"></audio>
 
 </body>
 </html>

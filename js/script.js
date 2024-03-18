@@ -184,8 +184,19 @@ function verificar(){
 }
 
 function playMusica1(){
-    //let audio = document.getElementById("x")
-    //audio.play();
+    let audio = document.getElementById("musica1")
+
+    stopMusica2()
+    stopMusica3()
+    stopMusica4()
+    stopMusica5()
+
+    restartMusica2()
+    restartMusica3()
+    restartMusica4()
+    restartMusica5()
+
+    audio.play();
 
     let play = document.getElementById("play1")
     let pause = document.getElementById("pause1")
@@ -195,8 +206,8 @@ function playMusica1(){
 }
 
 function stopMusica1(){
-    //let audio = document.getElementById("x")
-    //audio.play()
+    let audio = document.getElementById("musica1")
+    audio.pause()
 
     let play = document.getElementById("play1")
     let pause = document.getElementById("pause1")
@@ -206,8 +217,19 @@ function stopMusica1(){
 }
 
 function playMusica2(){
-    //let audio = document.getElementById("x")
-    //audio.play();
+    let audio = document.getElementById("musica2")
+
+    stopMusica1()
+    stopMusica3()
+    stopMusica4()
+    stopMusica5()
+
+    restartMusica1()
+    restartMusica3()
+    restartMusica4()
+    restartMusica5()
+
+    audio.play();
 
     let play = document.getElementById("play2")
     let pause = document.getElementById("pause2")
@@ -217,8 +239,8 @@ function playMusica2(){
 }
 
 function stopMusica2(){
-    //let audio = document.getElementById("x")
-    //audio.play()
+    let audio = document.getElementById("musica2")
+    audio.pause()
 
     let play = document.getElementById("play2")
     let pause = document.getElementById("pause2")
@@ -228,8 +250,19 @@ function stopMusica2(){
 }
 
 function playMusica3(){
-    //let audio = document.getElementById("x")
-    //audio.play();
+    let audio = document.getElementById("musica3")
+
+    stopMusica2()
+    stopMusica1()
+    stopMusica4()
+    stopMusica5()
+
+    restartMusica2()
+    restartMusica1()
+    restartMusica4()
+    restartMusica5()
+
+    audio.play();
 
     let play = document.getElementById("play3")
     let pause = document.getElementById("pause3")
@@ -239,8 +272,8 @@ function playMusica3(){
 }
 
 function stopMusica3(){
-    //let audio = document.getElementById("x")
-    //audio.play()
+    let audio = document.getElementById("musica3")
+    audio.pause()
 
     let play = document.getElementById("play3")
     let pause = document.getElementById("pause3")
@@ -250,8 +283,19 @@ function stopMusica3(){
 }
 
 function playMusica4(){
-    //let audio = document.getElementById("x")
-    //audio.play();
+    let audio = document.getElementById("musica4")
+
+    stopMusica2()
+    stopMusica3()
+    stopMusica1()
+    stopMusica5()
+
+    restartMusica2()
+    restartMusica3()
+    restartMusica1()
+    restartMusica5()
+
+    audio.play();
 
     let play = document.getElementById("play4")
     let pause = document.getElementById("pause4")
@@ -261,8 +305,8 @@ function playMusica4(){
 }
 
 function stopMusica4(){
-    //let audio = document.getElementById("x")
-    //audio.play()
+    let audio = document.getElementById("musica4")
+    audio.pause()
 
     let play = document.getElementById("play4")
     let pause = document.getElementById("pause4")
@@ -272,8 +316,19 @@ function stopMusica4(){
 }
 
 function playMusica5(){
-    //let audio = document.getElementById("x")
-    //audio.play();
+    let audio = document.getElementById("musica5")
+
+    stopMusica2()
+    stopMusica3()
+    stopMusica4()
+    stopMusica1()
+
+    restartMusica2()
+    restartMusica3()
+    restartMusica4()
+    restartMusica1()
+
+    audio.play();
 
     let play = document.getElementById("play5")
     let pause = document.getElementById("pause5")
@@ -283,12 +338,37 @@ function playMusica5(){
 }
 
 function stopMusica5(){
-    //let audio = document.getElementById("x")
-    //audio.play()
+    let audio = document.getElementById("musica5")
+    audio.pause()
 
     let play = document.getElementById("play5")
     let pause = document.getElementById("pause5")
 
     play.style.display = "block";
     pause.style.display = "none";
+}
+
+function restartMusica1(){
+    let audio = document.getElementById("musica1")
+    audio.currentTime = 0
+}
+
+function restartMusica2(){
+    let audio = document.getElementById("musica2")
+    audio.currentTime = 0
+}
+
+function restartMusica3(){
+    let audio = document.getElementById("musica3")
+    audio.currentTime = 0
+}
+
+function restartMusica4(){
+    let audio = document.getElementById("musica4")
+    audio.currentTime = 0
+}
+
+function restartMusica5(){
+    let audio = document.getElementById("musica5")
+    audio.currentTime = 0
 }
