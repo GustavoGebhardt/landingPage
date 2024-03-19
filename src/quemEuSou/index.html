@@ -12,11 +12,16 @@
 
     </header>
 
-    <main class="main-div">
-        <div>
-            <p>-> ~ nano quemEuSou.txt <br><br> GNU nano 2.0.6 File: quemEuSou.txt Modified <br><br> Lorem ipsum dolor sit amet. Est consequatur tempore est laboriosam sapiente eos fuga facilis et expedita aliquam rem enim nostrum id velit optio? Eos expedita architecto qui culpa nisi cum ipsa quasi id neque dolores et sint consectetur id ratione dolor. Aut maxime minima sit officia dolores est dolores saepe nam iusto unde est obcaecati voluptas.
+    <main>
+        <div class="main-div">
+            <p id="type-1">- ~ nano quemEuSou.txt</p>
+            <p id="text-1"><br> GNU nano 2.0.6 File: quemEuSou.txt Modified<br><br></p>
+            <p id="text-2">Lorem ipsum dolor sit amet. Est consequatur tempore est laboriosam sapiente eos fuga facilis et expedita aliquam rem enim nostrum id velit optio? Eos expedita architecto qui culpa nisi cum ipsa quasi id neque dolores et sint consectetur id ratione dolor. Aut maxime minima sit officia dolores est dolores saepe nam iusto unde est obcaecati voluptas.
                 Id praesentium obcaecati sit voluptates velit a sunt omnis et repellendus iusto. Id adipisci natus nam eius perspiciatis est autem earum et similique odit ut velit vitae quo numquam illo sit omnis magni.
-                Vel quas molestiae vel quod omnis et molestias assumenda qui voluptatem atque aut consequatur dolore aut amet delectus ut velit aliquid. Aut tempora velit ut modi doloremque hic voluptatem ipsa ex aliquam commodi. Ut voluptatem omnis et dolor temporibus ex dicta rerum in nisi enim aut numquam dolorem aut iure dignissimos.</p>
+                Vel quas molestiae vel quod omnis et molestias assumenda qui voluptatem atque aut consequatur dolore aut amet delectus ut velit aliquid. Aut tempora velit ut modi doloremque hic voluptatem ipsa ex aliquam commodi. Ut voluptatem omnis et dolor temporibus ex dicta rerum in nisi enim aut numquam dolorem aut iure dignissimos.<br><br>
+            </p>
+            <p id="type-2">- ~ display eu.img</p>
+            <img id="img" src="/res/eu.jpeg">
         </div>
         <a href="/">cd ..</a>
     </main>
@@ -24,6 +29,35 @@
     <footer>
 
     </footer>
+    
+    <script>
+        function typeWriter(elemento) {
+            const textoArray = elemento.innerHTML.split('');
+            elemento.innerHTML = '';
+            textoArray.forEach((letra, i) => {
+                setTimeout(() => elemento.innerHTML += letra, 95 * i);
+            });
+        }
+
+        function mostrarTexto(text1, text2){
+            text1.style.display = "block"
+            text2.style.display = "block"
+        }
+        
+        const titulo1 = document.getElementById("type-1");
+        const titulo2 = document.getElementById("type-2");
+        const text1 = document.getElementById("text-1")
+        const text2 = document.getElementById("text-2")
+        const img = document.getElementById("img")
+
+        typeWriter(titulo1);
+
+        setTimeout(() => mostrarTexto(text1, text2), 2100);
+        setTimeout(() => titulo2.style.display = "block", 2200);
+        setTimeout(() => (typeWriter(titulo2)), 2200);
+        setTimeout(() => img.style.display = "block", 4000);
+        
+    </script>
     
 </body>
 </html>
