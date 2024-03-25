@@ -1,6 +1,6 @@
 # landingPage
 Atividade avaliativa de PROG-3 -  IFRS - Campus Feliz
 
-Link Vercel:
+Link Vercel: https://landing-page-plum-rho-10.vercel.app/
 
-Link Repositorio:
+Link Repositorio: https://github.com/GustavoGebhardt/landingPage
