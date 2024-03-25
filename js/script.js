@@ -1,5 +1,11 @@
-function filme(){
-    location.href = "/";
+function mover(){
+    window.scroll({top: window.innerHeight, behavior: "smooth"})
+}
+
+console.log(window.innerHeight/2)
+
+function moverCima(){
+    window.scroll({top: 195, behavior: "smooth"})
 }
 
 function abrirFilme1() {
@@ -12,9 +18,11 @@ function abrirFilme1() {
         fecharFilme3()
         fecharFilme4()
         fecharFilme5()
+        mover()
 
     } else {
-        div.style.display = "none";
+        moverCima()
+        setTimeout(() => div.style.display = "none", 500)
     }
 }
 
@@ -28,9 +36,11 @@ function abrirFilme2() {
         fecharFilme3()
         fecharFilme4()
         fecharFilme5()
+        mover()
 
     } else {
-        div.style.display = "none";
+        moverCima()
+        setTimeout(() => div.style.display = "none", 500)
     }
 }
 
@@ -44,9 +54,11 @@ function abrirFilme3() {
         fecharFilme1()
         fecharFilme4()
         fecharFilme5()
+        mover()
 
     } else {
-        div.style.display = "none";
+        moverCima()
+        setTimeout(() => div.style.display = "none", 500)
     }
 }
 
@@ -60,9 +72,11 @@ function abrirFilme4() {
         fecharFilme3()
         fecharFilme1()
         fecharFilme5()
+        mover()
 
     } else {
-        div.style.display = "none";
+        moverCima()
+        setTimeout(() => div.style.display = "none", 500)
     }
 }
 
@@ -76,9 +90,11 @@ function abrirFilme5() {
         fecharFilme3()
         fecharFilme4()
         fecharFilme1()
+        mover()
 
     } else {
-        div.style.display = "none";
+        moverCima()
+        setTimeout(() => div.style.display = "none", 500)
     }
 }
 
@@ -172,7 +188,7 @@ function verificar(){
 
     console.log(senha)
 
-    if(senha == "teste"){
+    if(senha == "senha"){
         playAudio()
         div.style.display = "none";
         img.style.display = "none";
@@ -371,4 +387,18 @@ function restartMusica4(){
 function restartMusica5(){
     let audio = document.getElementById("musica5")
     audio.currentTime = 0
+}
+
+function respostaAbrir(){
+    location.href = "/src/livrosFavoritos/passagemSecreta/"
+}
+
+function respostaFechar(){
+    let div = document.getElementById("resposta-div")
+    div.style.display = "none";
+}
+
+function respostaMenu(){
+    let div = document.getElementById("resposta-div")
+    div.style.display = "flex";
 }

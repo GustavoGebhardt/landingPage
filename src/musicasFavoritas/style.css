@@ -97,6 +97,7 @@ body{
     border: none;
     display: block;
     margin-left: 50px;
+    cursor: pointer;
 }
 
 #pause1{
@@ -104,6 +105,7 @@ body{
     border: none;
     display: none;
     margin-left: 50px;
+    cursor: pointer;
 }
 
 #play2{
@@ -111,6 +113,7 @@ body{
     border: none;
     display: block;
     margin-left: 47px;
+    cursor: pointer;
 }
 
 #pause2{
@@ -118,6 +121,7 @@ body{
     border: none;
     display: none;
     margin-left: 47px;
+    cursor: pointer;
 }
 
 #play3{
@@ -125,6 +129,7 @@ body{
     border: none;
     display: block;
     margin-left: 49px;
+    cursor: pointer;
 }
 
 #pause3{
@@ -132,6 +137,7 @@ body{
     border: none;
     display: none;
     margin-left: 49px;
+    cursor: pointer;
 }
 
 #play4{
@@ -139,6 +145,7 @@ body{
     border: none;
     display: block;
     margin-left: 85px;
+    cursor: pointer;
 }
 
 #pause4{
@@ -146,6 +153,7 @@ body{
     border: none;
     display: none;
     margin-left: 85px;
+    cursor: pointer;
 }
 
 #play5{
@@ -153,6 +161,7 @@ body{
     border: none;
     display: block;
     margin-left: 9px;
+    cursor: pointer;
 }
 
 #pause5{
@@ -160,4 +169,5 @@ body{
     border: none;
     display: none;
     margin-left: 9px;
+    cursor: pointer;
 }

@@ -30,15 +30,26 @@
             <a onclick="fechar()" class="iniciar">Fechar</a>
         </div>
 
+        <div id="resposta-div">
+            <h1 class="titulo">Importante</h1>
+            <br>
+            <p class="paragrafo">Caso você queira acessar a resposta <br>por motivos do site não ter funcionado <br>corretamente ou não ter resolviso o enigma,<br> selecione a opção sim, caso contrario não.<br> Abrir passagem secreta:</p>
+            <div class="resposta-btn">
+                <a onclick="respostaAbrir()" class="iniciar">Sim</a>
+                <a  onclick="respostaFechar()" class="iniciar">Não</a>
+            </div>
+        </div>
+
         <div id="div-main-menu">
-            <a onclick="abrir()">A Biblioteca</a>
+            <a onclick="abrir()" class="biblioteca-btn">A Biblioteca</a>
+            <a onclick="respostaMenu()" class="biblioteca-btn">Resposta</a>
             <a href="/">Sair</a>
         </div>
 
         <div class="botao" onclick="paginaAbrir()"></div>
 
         <div id="pagina-livro">
-            <img class="pagina-img" src="/res/paginaRasgada.png">
+            <img class="pagina-img" src="/res/1.png">
             <a onclick="paginaFechar()" class="pagina-voltar">Voltar</a>
         </div>
 
